@@ -1,225 +1,376 @@
 <!--Main Navigation-->
 <header>
-    <div class="container">
-
-      <div class="row mb-2 mt-2">
+    <div class="container-fluid" style="padding-bottom: 10px">
         <img class="img-fluid" src="../assets/img/cabeceraIUTVAL2.png" alt="">
-      </div>
-
     </div>
+    <div class="container-fluid">
+      <!--Navbar-->
+<mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark light-blue darken-4">
 
-  <nav class="navbar navbar-expand-lg navbar-dark indigo darken-3 scrolling-navbar">
-    <a class="navbar-brand" href="#"><strong>UPTVal</strong></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <!-- Navbar brand -->
+  <mdb-navbar-brand>
+    <a class="navbar-brand" href="#">
+      <img src="../assets/img/logo_iutval2.png" height="30" alt="">
+    </a>
+  </mdb-navbar-brand>
+
+  <!-- Collapsible content -->
+  <links>
+
+      <!-- Links -->
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Inicio<span class="sr-only">(current)</span></a>
+        
+        <!-- Dropdown -->
+        <li class="nav-item dropdown" dropdown>
+          <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
+            Programa de Formación (PNF)<span class="caret"></span></a>
+          <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
+            <a class="dropdown-item waves-light" mdbWavesEffect href="#">Electricidad</a>
+            <a class="dropdown-item waves-light" mdbWavesEffect href="#">Informática</a>
+            <a class="dropdown-item waves-light" mdbWavesEffect href="#">Quimica</a>
+      
+          </div>
+        </li>
+        <li class="nav-item dropdown" dropdown>
+          <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
+            Admisión<span class="caret"></span></a>
+          <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
+            <a class="dropdown-item waves-light" mdbWavesEffect href="#">Electricidad</a>
+            <a class="dropdown-item waves-light" mdbWavesEffect href="#">Informática</a>
+            <a class="dropdown-item waves-light" mdbWavesEffect href="#">Quimica</a>
+          </div>
+        </li>
+      
+        <li class="nav-item dropdown" dropdown>
+          <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
+            Servicios Estudiantiles<span class="caret"></span></a>
+          <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
+            <a class="dropdown-item waves-light" mdbWavesEffect href="#">Centro de Estudiantes</a>
+            <a class="dropdown-item waves-light" mdbWavesEffect href="#">Becas</a>
+            <a class="dropdown-item waves-light" mdbWavesEffect href="#">Salud</a>
+            <a class="dropdown-item waves-light" mdbWavesEffect href="#">Culturales</a>
+      
+          </div>
+        </li>
+      
+        <li class="nav-item">
+          <a class="nav-link" href="#">Revistas</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">PNF</a>
+          <a class="nav-link" href="#">Investigación</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">CEEE</a>
+          <a class="nav-link" href="#">Innovación</a>
+
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Servicios Estudiantiles</a>
+          <a class="nav-link" href="#">Docentes</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#">Reglamentos</a>
-          </li>
+            <a type="button" mdbBtn floating="true" size="lg" class=" nav-link btn-fb waves-light" mdbWavesEffect><i class="fab fa-facebook-f"></i></a>
+        </li>
+
+        <li class="nav-item">
+            <a type="button" mdbBtn floating="true" size="lg" class=" nav-link btn-tw waves-light" mdbWavesEffect><i class="fab fa-twitter"></i></a>
+        </li>
+        <li class="nav-item">
+            <a type="button" mdbBtn floating="true" size="lg" class="nav-link  btn-yt waves-light" mdbWavesEffect><i class="fab fa-youtube"></i></a>
+        </li>
+        
+
+
       </ul>
-      <ul class="navbar-nav nav-flex-icons">
-        <li class="nav-item">
-          <a class="nav-link"><i class="fab fa-facebook-f"></i></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link"><i class="fab fa-twitter"></i></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link"><i class="fab fa-instagram"></i></a>
-        </li>
-      </ul>
+      <!-- Links -->
+
+ 
+  </links>
+   
+
+</mdb-navbar>
+<!--/.Navbar-->
+
     </div>
-  </nav>
+
+  
 
 </header>
 <!--Main Navigation-->
 
 
-<div class="container mt-20 mb-5">
+<div class="container-fluid mt-20 mb-5">
 
-<div class="row justify-content-center">
-  <div class="col-md-9">
-      <mdb-carousel class="carousel slide carousel-fade" [animation]="'fade'">
-          <mdb-carousel-item>
-            <div class="view w-100">
-              <img class="d-block w-100 h-350" src="../assets/img/noticias/noticia_mppeu1.jpg" alt="First slide">
-              <div class="mask rgba-black-light waves-light" mdbWavesEffect></div>
-            </div>
-            <div class="carousel-caption w-50 text-left">
-              <a class="text-white" href="#">
-                <h3 class="h3-responsive"><strong>Frente Universitario Antiimperialista defiende la legitimidad del Presidente Maduro</strong></h3>
-                <p>Los ministros Roa e Istúriz destacaron la importancia de mantener la unidad y la movilización en las universidades para defender la Patria, la paz y la Constitución</p>
-              </a>  
-            </div>
-          </mdb-carousel-item>
-          <mdb-carousel-item>
-            <div class="view w-100">
-              <img class="d-block w-100 h-350" src="../assets/img/iutv02.jpg" alt="Second slide">
-              <div class="mask rgba-black-strong waves-light" mdbWavesEffect></div>
-            </div>
-            <div class="carousel-caption">
-                <h3 class="h3-responsive">Universidad Politécnica Territorial</h3>
-                <p>de Valencia</p>
-            </div>
-          </mdb-carousel-item>
-          <mdb-carousel-item>
-            <div class="view w-100">
-              <img class="d-block w-100 h-350" src="../assets/img/iutv03.jpg" alt="Third slide">
-              <div class="mask rgba-black-slight waves-light" mdbWavesEffect></div>
-            </div>
-            <div class="carousel-caption">
-                <h3 class="h3-responsive">Universidad Politécnica Territorial</h3>
-                <p>de Valencia</p>
-            </div>
-          </mdb-carousel-item>
-        </mdb-carousel>
+<div class="row justify-content-center" style="padding-bottom: 10px">
+  <!-- Inicio del Carrouesel -->
+  <div class="col-md-9" >
+            <mdb-carousel class="carousel slide carousel-fade" [animation]="'fade'">
+                <mdb-carousel-item>
+                  <div class="view w-100">
+                    <img class="d-block w-100 h-350" src="../assets/img/noticias/noticia_mppeu1.jpg" alt="First slide">
+                    <div class="mask rgba-black-light waves-light" mdbWavesEffect></div>
+                  </div>
+                  <div class="carousel-caption w-50 text-left">
+                    <a class="text-white" href="#">
+                      <h3 class="h3-responsive"><strong>Frente Universitario Antiimperialista defiende la legitimidad del Presidente Maduro</strong></h3>
+                      <p>Los ministros Roa e Istúriz destacaron la importancia de mantener la unidad y la movilización en las universidades para defender la Patria, la paz y la Constitución</p>
+                    </a>  
+                  </div>
+                </mdb-carousel-item>
+                <mdb-carousel-item>
+                  <div class="view w-100">
+                    <img class="d-block w-100 h-350" src="../assets/img/iutv02.jpg" alt="Second slide">
+                    <div class="mask rgba-black-strong waves-light" mdbWavesEffect></div>
+                  </div>
+                  <div class="carousel-caption">
+                      <h3 class="h3-responsive">Universidad Politécnica Territorial</h3>
+                      <p>de Valencia</p>
+                  </div>
+                </mdb-carousel-item>
+                <mdb-carousel-item>
+                  <div class="view w-100">
+                    <img class="d-block w-100 h-350" src="../assets/img/iutv03.jpg" alt="Third slide">
+                    <div class="mask rgba-black-slight waves-light" mdbWavesEffect></div>
+                  </div>
+                  <div class="carousel-caption">
+                      <h3 class="h3-responsive">Universidad Politécnica Territorial</h3>
+                      <p>de Valencia</p>
+                  </div>
+                </mdb-carousel-item>
+              </mdb-carousel>
 
-        <div class="row">
-          <div class="col-md-6 mt-3">
-              <mdb-card style="width: 20rem">
-                  <mdb-card-body>
-                    <mdb-card-title>
-                      <h5 class="font-weight-bold mb-3">Noticias</h5>
-                    </mdb-card-title>
-                    <mdb-card-text class="mb-0">Some quick example text to build on the panel title and make up the bulk of the
-                      panel's
-                      content</mdb-card-text>
-                  </mdb-card-body>
-                  <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Cras justo odio</li>
-                    <li class="list-group-item">Dapibus ac facilisis in</li>
-                    <li class="list-group-item">Vestibulum at eros</li>
-                  </ul>
-                  <!--
-                  <mdb-card-body>
-                    <a href="#!" class="card-link">Card link</a>
-                    <a href="#!" class="card-link">Another link</a>
-                  </mdb-card-body>
-                  -->
-              </mdb-card>
-          </div>
+ <!-- /carrousell -->
 
-          <div class="col-md-6 mt-3">
-              <mdb-card style="width: 20rem">
-                  <mdb-card-body>
-                    <mdb-card-title>
-                      <h5 class="font-weight-bold mb-3">Eventos</h5>
-                    </mdb-card-title>
-                    <mdb-card-text class="mb-0">Some quick example text to build on the panel title and make up the bulk of the
-                      panel's
-                      content</mdb-card-text>
-                  </mdb-card-body>
-                  <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Cras justo odio</li>
-                    <li class="list-group-item">Dapibus ac facilisis in</li>
-                    <li class="list-group-item">Vestibulum at eros</li>
-                  </ul>
-                  <!-- 
-                  <mdb-card-body>
-                    <a href="#!" class="card-link">Card link</a>
-                    <a href="#!" class="card-link">Another link</a>
-                  </mdb-card-body>
-                -->
-              </mdb-card>
-          </div>
 
-        </div>
+ <div class="row" style="padding: 10px">
+   
+     <div class="col-md-4" align="center">
+        <mdb-card class="mb-3" bgColor="bg-light" style="max-width: 15rem">
+            <mdb-card-header>Noticias</mdb-card-header>
+            <mdb-card-body>
+              <mdb-card-title>
+                <h5>Light Panel title</h5>
+              </mdb-card-title>
+              <mdb-card-text>Some quick example text to build on the panel title and make up the bulk of the
+                panel's content.</mdb-card-text>
+            </mdb-card-body>
+          </mdb-card>
+    
+    </div>
+
+    <div class="col-md-4" align="center">
+        <mdb-card class="text-white mb-3" bgColor="bg-warning" style="max-width: 15rem">
+            <mdb-card-header>Revista</mdb-card-header>
+            <mdb-card-body>
+              <mdb-card-title>
+                <h5>Warning Panel title</h5>
+              </mdb-card-title>
+              <mdb-card-text class="text-white">Some quick example text to build on the panel title and make up the bulk
+                of the
+                panel's content.</mdb-card-text>
+            </mdb-card-body>
+          </mdb-card>
+     
+     </div>
+
+     <div class="col-md-4" align="center">
+        <mdb-card class="text-white mb-3" bgColor="bg-info" style="max-width: 15rem">
+            <mdb-card-header>Eventos</mdb-card-header>
+            <mdb-card-body>
+              <mdb-card-title>
+                <h5>Warning Panel title</h5>
+              </mdb-card-title>
+              <mdb-card-text class="text-white">Some quick example text to build on the panel title and make up the bulk
+                of the
+                panel's content.</mdb-card-text>
+            </mdb-card-body>
+          </mdb-card>
+     
+     </div>
+     
+      
+   
+ </div>
+
+
+ <div class="row" style="padding: 10px">
+   
+    <div class="col-md-4" align="center">
+       <mdb-card class="mb-3" bgColor="bg-light" style="max-width: 15rem">
+           <mdb-card-header>Noticias</mdb-card-header>
+           <mdb-card-body>
+             <mdb-card-title>
+               <h5>Light Panel title</h5>
+             </mdb-card-title>
+             <mdb-card-text>Some quick example text to build on the panel title and make up the bulk of the
+               panel's content.</mdb-card-text>
+           </mdb-card-body>
+         </mdb-card>
+   
+   </div>
+
+   <div class="col-md-4" align="center">
+       <mdb-card class="text-white mb-3" bgColor="bg-warning" style="max-width: 15rem">
+           <mdb-card-header>Revista</mdb-card-header>
+           <mdb-card-body>
+             <mdb-card-title>
+               <h5>Warning Panel title</h5>
+             </mdb-card-title>
+             <mdb-card-text class="text-white">Some quick example text to build on the panel title and make up the bulk
+               of the
+               panel's content.</mdb-card-text>
+           </mdb-card-body>
+         </mdb-card>
+    
+    </div>
+
+    <div class="col-md-4" align="center">
+       <mdb-card class="text-white mb-3" bgColor="bg-info" style="max-width: 15rem">
+           <mdb-card-header>Eventos</mdb-card-header>
+           <mdb-card-body>
+             <mdb-card-title>
+               <h5>Warning Panel title</h5>
+             </mdb-card-title>
+             <mdb-card-text class="text-white">Some quick example text to build on the panel title and make up the bulk
+               of the
+               panel's content.</mdb-card-text>
+           </mdb-card-body>
+         </mdb-card>
+    
+    </div>
+    
+     
+  
+</div>
+   
+
+<div class="row" style="padding: 10px">
+   
+    <div class="col-md-4" align="center">
+       <mdb-card class="mb-3" bgColor="bg-light" style="max-width: 15rem">
+           <mdb-card-header>Noticias</mdb-card-header>
+           <mdb-card-body>
+             <mdb-card-title>
+               <h5>Light Panel title</h5>
+             </mdb-card-title>
+             <mdb-card-text>Some quick example text to build on the panel title and make up the bulk of the
+               panel's content.</mdb-card-text>
+           </mdb-card-body>
+         </mdb-card>
+   
+   </div>
+
+   <div class="col-md-4" align="center">
+       <mdb-card class="text-white mb-3" bgColor="bg-warning" style="max-width: 15rem">
+           <mdb-card-header>Revista</mdb-card-header>
+           <mdb-card-body>
+             <mdb-card-title>
+               <h5>Warning Panel title</h5>
+             </mdb-card-title>
+             <mdb-card-text class="text-white">Some quick example text to build on the panel title and make up the bulk
+               of the
+               panel's content.</mdb-card-text>
+           </mdb-card-body>
+         </mdb-card>
+    
+    </div>
+
+    <div class="col-md-4" align="center">
+       <mdb-card class="text-white mb-3" bgColor="bg-info" style="max-width: 15rem">
+           <mdb-card-header>Eventos</mdb-card-header>
+           <mdb-card-body>
+             <mdb-card-title>
+               <h5>Warning Panel title</h5>
+             </mdb-card-title>
+             <mdb-card-text class="text-white">Some quick example text to build on the panel title and make up the bulk
+               of the
+               panel's content.</mdb-card-text>
+           </mdb-card-body>
+         </mdb-card>
+    
+    </div>
+    
+     
+  
+</div>
+
   </div>
 
-  <div class="col-md-3">
+
+
+
+  <div class="col-md-3" >
       <mdb-card class="text-center">
           <mdb-card-body>
             <mdb-card-title>
-                <img class="img-fluid img-thumbnail" src="../assets/img/home_enlaces.jpg" alt="Enlaces">
+              <h5 class="color-block  orange accent-3 z-depth-2 py-4 text-center white-text" style="border-top-left-radius: 10px; border-top-right-radius: 10px ">Enlaces Institucionales</h5>
+            
+               <!--  <img class="img-fluid img-thumbnail" src="../assets/img/home_enlaces.jpg" alt="Enlaces"> -->
             </mdb-card-title>
             <mdb-card-text>
                 <div class="view overlay">
-                  <img class="img-fluid img-thumbnail" src="../assets/img/mppeu.png" alt="MPPEUCT">
+                  <img  width="100%" class="img-fluid img-thumbnail" src="../assets/img/mppeu.png" alt="MPPEUCT">
                   <a>
                     <div class="mask waves-effect rgba-white-slight"></div>
                   </a>
+                  <p>Ministerio de el Poder Popular para la Educación Universitaria, Ciencia y Tecnología</p>
                 </div>
-                <div class="text-center view overlay">
-                    <img class="img-fluid img-thumbnail" src="../assets/img/beca sucre.png" alt="Beca Sucre">
+                                             
+                
+          
+                            
+            </mdb-card-text>
+
+            <mdb-card-title>
+              <hr>
+              <h5 class="color-block orange accent-4 z-depth-2 py-4 text-center white-text" style="border-top-left-radius: 10px; border-top-right-radius: 10px ">Becas</h5>
+              
+            </mdb-card-title>
+            <mdb-card-text>
+                <div class="text-center view overlay"  style="padding: 5px">
+                    <img width="100%" class="img-fluid img-thumbnail" src="../assets/img/beca sucre.png" alt="Beca Sucre">
                     <a>
                       <div class="mask waves-effect rgba-white-slight"></div>
                     </a>
                   </div>
-                  <div class="view overlay">
-                    <img class="img-fluid img-thumbnail" src="../assets/img/boton_becas.jpg" alt="Funda Ayacucho">
+                  <div class="view overlay"  style="padding: 5px">
+                    <img  width="100%" class="img-fluid img-thumbnail" src="../assets/img/boton_becas.jpg" alt="Funda Ayacucho">
                     <a>
                       <div class="mask waves-effect rgba-white-slight"></div>
                     </a>
-                  </div>                             
-                <div class="view overlay">
-                  <img class="img-fluid img-thumbnail" src="../assets/img/sga.jpg" alt="Sistema de Gestión Académica">
-                  <a>
-                      <div class="mask waves-effect rgba-white-slight"></div>
-                  </a>
-                </div>
-                <div class="view overlay">
-                  <img class="img-fluid img-thumbnail" src="../assets/img/revista3.png" alt="Revista Arbitrada">
-                  <a>
-                    <div class="mask waves-effect rgba-white-slight"></div>
-                  </a>
-                </div>
-                <div class="view overlay">
-                  <img class="img-fluid img-thumbnail" src="../assets/img/recibos.jpg" alt="Recibos de Nómina">
-                  <a>
-                    <div class="mask waves-effect rgba-white-slight"></div>
-                  </a>
-                </div>
-                <div class="view overlay text-center">
-                  <img class="img-fluid img-thumbnail" src="../assets/img/sugau.PNG" alt="SUGAU">
-                  <a>
-                    <div class="mask waves-effect rgba-white-slight"></div>
-                  </a>
-                </div>               
-            </mdb-card-text>
+                  </div>
+            </mdb-card-text> 
             
+            <mdb-card-title>
+              <hr>
+                <h5 class="color-block orange darken-4 z-depth-2 py-4 text-center white-text" style="border-top-left-radius: 10px; border-top-right-radius: 10px ">Sistemas de Gestión</h5>
+                
+              </mdb-card-title>
+              <mdb-card-text>
+                  <div class="view overlay" style="padding: 5px">
+                      <img width="100%" class="img-fluid img-thumbnail" src="../assets/img/sistema-gestion.png" alt="Sistema de Gestión Académica">
+                     <p>Sistema de Gestión Académica</p>
+                      <a>
+                          <div class="mask waves-effect rgba-white-slight"></div>
+                      </a>
+                    </div>
+
+                    <div class="view overlay" style="padding: 5px">
+                        <img width="100%" class="img-fluid img-thumbnail" src="../assets/img/recibos.jpg" alt="Recibos de Nómina">
+                        <a>
+                          <div class="mask waves-effect rgba-white-slight"></div>
+                        </a>
+                      </div>
+                      <div class="view overlay text-center" style="padding: 5px">
+                        <img width="100%" class="img-fluid img-thumbnail" src="../assets/img/sugau.PNG" alt="SUGAU">
+                        <a>
+                          <div class="mask waves-effect rgba-white-slight"></div>
+                        </a>
+                      </div>  
+              </mdb-card-text> 
           </mdb-card-body>
       </mdb-card>
 
-      <mdb-card class="mt-2">
-          <mdb-card-body>
-            <mdb-card-title>
-              <h5>Twitter</h5>
-              <h6 class="text-muted mb-2"></h6>
-            </mdb-card-title>
-            <mdb-card-text>
-              
-            </mdb-card-text>
-            
-          </mdb-card-body>
-      </mdb-card>
+ 
 
-      <mdb-card class="mt-2">
-          <mdb-card-body>
-            <mdb-card-title>
-              <h5>Facebook</h5>
-              <h6 class="text-muted mb-2"></h6>
-            </mdb-card-title>
-            <mdb-card-text>
-              
-            </mdb-card-text>
-            
-          </mdb-card-body>
-      </mdb-card>
 
   </div>
 
@@ -227,8 +378,10 @@
 
 </div>
 
+
+ 
 <!-- Footer -->
-<footer class="page-footer font-small blue pt-4">
+<footer class="page-footer font-small blue pt-4"  >
 
   <!-- Footer Links -->
   <div class="container-fluid text-center text-md-left">
@@ -239,7 +392,7 @@
       <!-- Grid column -->
       <div class="col-md-6 mt-md-0 mt-3">
         <div class="text-center view overlay">
-          <img class="img-fluid img-thumbnail w-25" src="../assets/img/logo_iutval.png" alt="UPT Valencia">
+          <img class="img-fluid img-thumbnail w-25" src="../assets/img/logo_iutval2.png" alt="UPT Valencia">
           <a>
             <div class="mask waves-effect rgba-white-slight"></div>
           </a>
