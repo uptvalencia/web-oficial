@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "web-uptval": {
+    "uptvalencia": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/web-uptval",
+            "outputPath": "dist/uptvalencia",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -69,18 +69,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "web-uptval:build"
+            "browserTarget": "uptvalencia:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "web-uptval:build:production"
+              "browserTarget": "uptvalencia:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "web-uptval:build"
+            "browserTarget": "uptvalencia:build"
           }
         },
         "test": {
@@ -114,7 +114,7 @@
         }
       }
     },
-    "web-uptval-e2e": {
+    "uptvalencia-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "prefix": "",
@@ -123,11 +123,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "web-uptval:serve"
+            "devServerTarget": "uptvalencia:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "web-uptval:serve:production"
+              "devServerTarget": "uptvalencia:serve:production"
             }
           }
         },
@@ -143,5 +143,5 @@
       }
     }
   },
-  "defaultProject": "web-uptval"
+  "defaultProject": "uptvalencia"
 }
