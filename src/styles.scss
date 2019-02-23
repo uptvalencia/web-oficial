@@ -4,7 +4,10 @@
 body,
 html {
   height: 100%;
- // background-color: cornsilk;
+}
+
+.container {
+  max-width: 1200px;
 }
  
 .bg {
