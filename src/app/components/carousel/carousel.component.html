@@ -1,4 +1,5 @@
-
+<router-outlet></router-outlet>
+<div class="container">
 <div class="row mt-4">
 <!-- Inicio del Carrouesel -->
 <mdb-carousel class="carousel slide carousel-fade" [animation]="'fade'">
@@ -36,77 +37,76 @@
     </mdb-carousel-item>
   </mdb-carousel>
 </div>
+</div>
 <!-- /carrousell -->
 
 <div class="row mt-4">
-  <div class="col-md-4" align="left">
-    <mdb-card class="mb-3" bgColor="bg-light" >
-        <mdb-card-header><strong>Noticias recientes</strong></mdb-card-header>
-        <mdb-card-body>
-          <!--mdb-card-title>
-            <h5>Light Panel title</h5>
-          </mdb-card-title-->
-          <mdb-card-text class="text-justify">
-            [01.10.2018]. <b><a href="#">IUTVAL abre espacios para acoger estudiantes 
-              de Universidad de Ciencias de la Salud fwfd werw erwer wer wer werwr
-            wwrgwergw rgwergwerwrw erwgerwgerwgw</a></b>
-            <br><div class="mb-1"></div>
-            [01.10.2018]. <b><a href="#">IUTVAL abre espacios para acoger estudiantes 
-              de Universidad de Ciencias de la Salud</a></b>
-            <br><div class="mb-1"></div>
-            [01.10.2018]. <b><a href="#">IUTVAL abre espacios para acoger estudiantes
-            de Universidad de Ciencias de la Salud</a></b>
-            <br><div class="mb-1"></div>
-            [01.10.2018]. <b><a href="#">IUTVAL abre espacios para acoger estudiantes
-            de Universidad de Ciencias de la Salud</a></b>
-            <br><div class="mb-1"></div>
-            [01.10.2018]. <b><a href="#">IUTVAL abre espacios para acoger estudiantes
-            de Universidad de Ciencias de la Salud</a></b>
-          </mdb-card-text>
-          
-        </mdb-card-body>
-      </mdb-card>
+  <div class="col-md">
+    
+      <div class="row">
+        <div class="col-md-6">
+            <mat-card>
+                <mat-card-header>
+                  <mat-card-title>IUTVAL abre espacios para acoger estudiantes 
+                    de Universidad de Ciencias de la Salud</mat-card-title>
+                  <mat-card-subtitle>01-10-2018</mat-card-subtitle>
+                </mat-card-header>
+                <img mat-card-image src="../../../assets/img/noticias/universidad_cs1.jpg" alt="Photo of a Shiba Inu">
+                <mat-card-content>
+                  <div class="text-justify text-sm">
+                    120 estudiantes distribuidos en 4 secciones iniciaron su curso introductorio
+                    de las carreras Medicina Integral, Enfermería Integral y Fisioterapia.
+                  </div>
+                  <button mat-button>Leer más..</button>
+                </mat-card-content>
+              </mat-card>
+        </div>
+        <div class="col-md-6" align="left">
+            <ul class="list-unstyled">
+                <li class="media">
+                  <img class="d-flex mr-3 w-25" src="../../../assets/img/noticias/angostura1.jpg" alt="Generic placeholder image">
+                  <div class="media-body">
+                    <h5 class="mt-0 mb-1 font-weight-bold">Conversatorio a 200 años del discurso de Angostura</h5>
+                    14-02-2019
+                  </div>
+                </li>
+                <li class="media my-4">
+                  <img class="d-flex mr-3 w-25" src="../../../assets/img/noticias/catedra_hcf1.jpg" alt="Generic placeholder image">
+                  <div class="media-body">
+                    <h5 class="mt-0 mb-1 font-weight-bold">Inaguracion Catedra Libre "HCHF"</h5>
+                    29-11-2018
+                  </div>
+                </li>
+                <li class="media my-4">
+                  <img class="d-flex mr-3 w-25" src="../../../assets/img/noticias/navidad01.jpg" alt="Generic placeholder image">
+                  <div class="media-body">
+                    <h5 class="mt-0 mb-1 font-weight-bold">Navidad IUT Valencia 2018</h5>
+                    26-11-2018
+                  </div>
+                </li>
+                <li class="media my-4">
+                    <img class="d-flex mr-3 w-25" src="../../../assets/img/noticias/pequiven1.png" alt="Generic placeholder image">
+                    <div class="media-body">
+                      <h5 class="mt-0 mb-1 font-weight-bold">Presentacion de Proyectos en Pequiven</h5>
+                      22-11-2018
+                    </div>
+                  </li>
+                  <li class="media">
+                      <img class="d-flex mr-3 w-25" src="../../../assets/img/noticias/creacion_universidad.jpg" alt="Generic placeholder image">
+                      <div class="media-body">
+                        <h5 class="mt-0 mb-1 font-weight-bold">Presidente Maduro anuncia creación de nueve universidades politécnicas en el país (+UPTValencia)</h5>
+                        22-11-2018
+                      </div>
+                    </li>
+              </ul>
+        </div>
+      </div>
   </div>
 
-  <div class="col-md-4" align="center">
-      <mdb-card class="text-white mb-3" bgColor="bg-warning" style="max-width: 15rem">
-          <mdb-card-header>Revista Politécnica</mdb-card-header>
-          <mdb-card-body>
-            <mdb-card-title>
-              <h5>Últimas ediciones</h5>
-            </mdb-card-title>
-            <mdb-card-text class="text-white">Some quick example text to build on the panel title and make up the bulk
-              of the
-              panel's content.</mdb-card-text>
-          </mdb-card-body>
-        </mdb-card>
-  </div>
-
-  <div class="col-md-4">
-      <mat-card class="example-card">
-          <mat-card-header>
-            <div mat-card-avatar class="example-header-image"></div>
-            <mat-card-title>Shiba Inu</mat-card-title>
-            <mat-card-subtitle>Dog Breed</mat-card-subtitle>
-          </mat-card-header>
-          <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
-          <mat-card-content>
-            <p>
-              The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
-              A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
-              bred for hunting.
-            </p>
-          </mat-card-content>
-          <mat-card-actions>
-            <button mat-button>LIKE</button>
-            <button mat-button>SHARE</button>
-          </mat-card-actions>
-        </mat-card>
-  </div>
 </div>
 
 
-<div class="row">
+<div class="row mt-4">
 
 <div class="col-md-4" align="center">
    <mdb-card class="mb-3" bgColor="bg-light">
