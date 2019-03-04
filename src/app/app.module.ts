@@ -3,9 +3,10 @@ import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
+import { WebModule } from './components/app.web/web.module';
+import { AdminModule } from '../app/components/app.admin/admin.module';
 
 import { AppComponent } from './app.component';
-import { CoreModule } from './core/core.module';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { CoreModule } from './core/core.module';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    CoreModule
+    WebModule,
+    AdminModule
   ],
   providers: [],
   bootstrap: [AppComponent]

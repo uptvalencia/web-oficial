@@ -1,23 +1,16 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { PostComponent } from './components/post/post.component';
-import { NotFoundComponent } from './core/not-found/not-found.component';
-import { HomeWebComponent } from './components/home-web/home-web.component';
-
+import { NotFoundComponent } from '../app/components/share/not-found/not-found.component';
 
 
 const routes: Routes = [
   {
     path: '',
-    component: HomeWebComponent
+    loadChildren: './components/app.web/web.module#WebModule'
   },
   {
-    path: 'post',
-    component: PostComponent
-  },
-  {
-    path: 'about',
-    loadChildren: './about/about.module#AboutModule'
+    path: 'admin',
+    loadChildren: './components/app.admin/admin.module#AdminModule'
   },
   {
     path: '**',
@@ -30,3 +23,9 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
+
+/*
+
+  https://academia-binaria.com/paginas-y-rutas-angular-spa/
+
+*/
